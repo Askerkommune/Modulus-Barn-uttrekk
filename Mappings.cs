@@ -1701,7 +1701,9 @@ namespace UttrekkFamilia
         #region Bydeler og Connection strings
         public string GetConnectionstring(string bydel, string servername)
         {
-            return BydelConnectionStrings[bydel].Replace("*", servername);
+            return "Server=sn-staging\\sql2019;Database=VismaProdAskerFamilia;Integrated Security=True;MultipleActiveResultSets=True;TrustServerCertificate=True;";
+            //return BydelConnectionStrings[bydel].Replace("*", servername);
+
         }
         public List<string> GetAlleBydeler()
         {
